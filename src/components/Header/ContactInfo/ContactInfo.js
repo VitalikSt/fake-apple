@@ -1,5 +1,5 @@
 import React from 'react';
-import {LinkStyled} from '../../Common/UiStyle';
+import {LinkStyled} from '../../common/UiStyle';
 
 const ContactInfo = () => {
 	
