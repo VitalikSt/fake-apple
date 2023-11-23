@@ -1,14 +1,21 @@
 import React from 'react';
+import {Routes, Route} from "react-router-dom";
 import Header from './components/Header/Header';
-import NavBar from "./components/NavBar/NavBar";
-import GlobalStyle from './components/Common/GlobalStyle.js';
+import Home from './pages/Home';
+import Repair from './pages/Repair';
+import GlobalStyle from './components/Common/GlobalStyle';
 
 const App = () => {
 	return (
 			<>
-				<GlobalStyle/>
-				<Header/>
-				<NavBar />
+			<GlobalStyle />
+			<Header />
+			<main>
+				<Routes>
+					<Route path="/" element={<Home/>}></Route>
+					<Route path="/repair" element={<Repair/>}></Route>
+				</Routes>
+			</main>
 			</>
 	)
 }
